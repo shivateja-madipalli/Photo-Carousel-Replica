@@ -1,0 +1,141 @@
+html {
+  font-size: 20px;
+  /*background-image: url("img/twitter_background.jpg") ;*/
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-color: #616161;
+}
+
+body {
+    /*overflow: hidden;*/
+    /*background-color: #F5F5F5;*/
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    /*opacity: 0.8;*/
+}
+
+.titleStuff {
+  /*font-size: 100%;*/
+  letter-spacing: 1px;
+  color: #ffc600;
+}
+
+.title1 {
+  text-transform: uppercase;
+  font-family: 'Arsenal', sans-serif;
+}
+
+.nonDraggableImage{
+    -webkit-user-drag: none;
+}
+
+.carouselUnorderedList {
+  display: flex;
+  list-style:none;
+  justify-content:center;
+  margin: 0;
+  padding: 0;
+}
+
+#carouselUL li {
+  min-width: 8%;
+  max-width: 40%;
+  opacity: 1;
+  background-color: #FAFAFA;
+}
+
+
+img{
+  margin:auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+/*NEW CLASSES*/
+
+.container {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.direction {
+  cursor: pointer;
+  background: url(./img/assets/img/blank.gif) no-repeat;
+}
+
+.liBorder {
+  border: 8px solid #E0E0E0;
+}
+
+.liLeft {
+  border-right:0;
+  background: url(./img/assets/img/paddle_prev_999.png) no-repeat center;
+}
+
+.liRight {
+  border-left:0;
+  background: url(./img/assets/img/paddle_next_999.png) no-repeat center;
+}
+
+.liMiddle {
+  border-left:0;
+  border-right: 0;
+}
+
+.liLeft:hover {
+  /*background: url(./img/assets/img/paddle_prev_999.png) no-repeat center*/
+}
+
+.liRight:hover {
+  /*background: url(./img/assets/img/paddle_next_999.png) no-repeat center;*/
+}
+
+.imageName {
+  /*font-family: 'Jim Nightshade', cursive;*/
+  font-style: italic;
+  color: #ffc600;
+  /*color: #FFCC80*/
+}
+
+#addNewImage {
+  margin-top: 2%;
+}
+
+.newImageContent {
+  width:40%;
+}
+
+#addNewImageImage {
+  list-style:none;
+}
+
+input[type="text"] {
+  /*display: block;*/
+  margin: 0;
+  /*width: 100%;*/
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  height: 8%;
+  font-size: inherit;
+}
+
+.btn {
+  border-radius: 9px;
+  margin-top: 1%;
+  width: 41%;
+  font-family: inherit;
+  color: #000000;
+  font-size: 31px;
+  background: #dedede;
+  /*padding: 8px 20px 10px 20px;*/
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #f0f5eb;
+  text-decoration: none;
+}

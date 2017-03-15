@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-resource.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-touch.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
+  <script src="./index.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Arsenal:700|Merriweather" rel="stylesheet">
+  <link href="./main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body ng-app="carouselApp" ng-controller="carouselAppCntrl">
+  <header>
+    <h1 class="titleStuff title1"> {{title}} </h1>
+  </header>
+
+  <section class="container">
+
+    <ul id="carouselUL" class="carouselUnorderedList">
+      <li ng-click="prevSlide()" class="direction liBorder liLeft">
+      </li>
+      <li class="liBorder liMiddle">
+        <section>
+          <section ng-repeat="img in slides"
+          ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
+          ng-hide="!isCurrentSlideIndex($index)">
+            <img ng-src="{{img.path}}">
+
+            <h5 class="imageName">{{img.name}}</h5>
+          </section>
+        </section>
+      </li>
+      <li ng-click="nextSlide()" class="direction liBorder liRight">
+      </li>
+    </ul>
+
+  </section>
+
+  <section>
+    <h5 class="titleStuff"> New Image </h5>
+  </section>
+
+  <section id="addNewImage">
+    <ul id="addNewImageImage">
+      <li>
+        <input type="text" class="newImageContent" id="Name" placeholder="Name" ng-model="imageName" ng-disabled="saving" autofocus/>
+      </li>
+      <li>
+        <input type="text" class="newImageContent" id="Image URL" placeholder="Image URL" ng-model="imageURL" ng-disabled="saving" ng-keyup="$event.keyCode == 13 ? insertNewImage() : null" autofocus/>
+      </li>
+      <li>
+        <input type="button" class="btn" value="create" ng-click= "insertNewImage()" ng-keyup="$event.keyCode == 13 ? insertNewImage() : null" />
+      </li>
+    </ul>
+
+  </section>
+
+</body>
+
+</html>
