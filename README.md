@@ -10,6 +10,17 @@
 * Clone the project and open index.html in any web browser.
 * Add photos as required and by clicking next/prev the photo carousel can be viewed.
 
+###### Example save data:
+
+* Name: Batman got some Science
+* ImageURL: http://i.imgur.com/0IGbqui.jpg
+
+![Submit New Image](/img/new_image.png?raw=true "")
+
+and...
+
+![Screen](/img/screen.png?raw=true "")
+
 #### Scope for Enhancements
 
 * Animation can be implemented.
