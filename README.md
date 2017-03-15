@@ -5,7 +5,7 @@
 
 ##### The app runs without any server and photos will not be saved.
 
-* How to run?
+###### How to run?
 * A valid internet connection is required (as angular is fetched from a CDN).
 * Clone the project and open index.html in any web browser.
 * Add photos as required and by clicking next/prev the photos carousel can be viewed.
