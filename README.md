@@ -16,7 +16,7 @@
 * A Server to remember the state of the application.
 * Saving the photos in any photo sharing application (by using their APIs).
 * Responsive UI (currently it is semi responsive).
-* CREATE AND UPDATE Operations to implement any filters or changing the out text after saving the photo.
+* CREATE AND UPDATE Operations to implement any filters or changing the text after saving the photo.
 * Social Network Sharing capability.
 
 -------------
